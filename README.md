@@ -13,5 +13,5 @@ Simply go into source directory and type ``make``.
 Copyright
 ------------
 
-Original 2000 version by Jonathan Villemure, enhanced and updated for Haiku in 2018 by Arnav Bhatt.
+Original 2000 version by Jonathan Villemure.
 
