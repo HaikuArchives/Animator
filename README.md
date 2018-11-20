@@ -15,8 +15,3 @@ Copyright
 
 Original 2000 version by Jonathan Villemure, enhanced and updated for Haiku in 2018 by Arnav Bhatt.
 
-
-Contact
-----------
-
-Write us at jvillemure@bigfoot.com
