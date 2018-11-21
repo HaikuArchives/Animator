@@ -1,4 +1,4 @@
-## Haiku Generic Makefile ##
+## Haiku Generic Makefile v2.6 ##
 
 ## Fill in this file to specify the project being created, and the referenced
 ## Makefile-Engine will do all of the hard work for you. This handles any
@@ -75,7 +75,7 @@ LOCAL_INCLUDE_PATHS =
 
 #	Specify the level of optimization that you want. Specify either NONE (O0),
 #	SOME (O1), FULL (O2), or leave blank (for the default optimization level).
-OPTIMIZE :=
+OPTIMIZE := FULL
 
 # 	Specify the codes for languages you are going to support in this
 # 	application. The default "en" one must be provided too. "make catkeys"
