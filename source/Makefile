@@ -15,7 +15,7 @@ NAME = Animator
 TYPE = APP
 
 # 	If you plan to use localization, specify the application's MIME signature.
-APP_MIME_SIG = 
+APP_MIME_SIG = application/x-gjvr-Animator
 
 #	The following lines tell Pe and Eddie where the SRCS, RDEFS, and RSRCS are
 #	so that Pe and Eddie can fill them in for you.
@@ -28,19 +28,15 @@ APP_MIME_SIG =
 #	means this Makefile will not work correctly if two source files with the
 #	same name (source.c or source.cpp) are included from different directories.
 #	Also note that spaces in folder names do not work well with this Makefile.
-SRCS =  \
-	main.cpp \
-	fenetre.cpp \
-	mainview.cpp \
-	about.cpp
+SRCS = main.cpp mainview.cpp fenetre.cpp about.cpp
 
 #	Specify the resource definition files to use. Full or relative paths can be
 #	used.
-RDEFS =
+RDEFS = animator.rdef
 
 #	Specify the resource files to use. Full or relative paths can be used.
 #	Both RDEFS and RSRCS can be utilized in the same Makefile.
-RSRCS = animator.rsrc
+RSRCS =
 
 # End Pe/Eddie support.
 # @<-src@ 
@@ -58,7 +54,7 @@ RSRCS = animator.rsrc
 #	- 	if your library does not follow the standard library naming scheme,
 #		you need to specify the path to the library and it's name.
 #		(e.g. for mylib.a, specify "mylib.a" or "path/mylib.a")
-LIBS =  be translation
+LIBS = $(STDCPPLIBS) be translation
 
 #	Specify additional paths to directories following the standard libXXX.so
 #	or libXXX.a naming scheme. You can specify full paths or paths relative
@@ -70,7 +66,7 @@ LIBPATHS =
 #	Additional paths to look for system headers. These use the form
 #	"#include <header>". Directories that contain the files in SRCS are
 #	NOT auto-included here.
-SYSTEM_INCLUDE_PATHS =
+SYSTEM_INCLUDE_PATHS = 
 
 #	Additional paths paths to look for local headers. These use the form
 #	#include "header". Directories that contain the files in SRCS are
@@ -108,7 +104,7 @@ SYMBOLS :=
 DEBUGGER := 
 
 #	Specify any additional compiler flags to be used.
-COMPILER_FLAGS =
+COMPILER_FLAGS = 
 
 #	Specify any additional linker flags to be used.
 LINKER_FLAGS = 

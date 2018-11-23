@@ -9,13 +9,13 @@
 #include <list>
 #include <OS.h>
 
-typedef list<BBitmap*>::iterator ITER;
+typedef std::list<BBitmap*>::iterator ITER;
 
 class MainView : public BView
 {
 	BBitmap* CurrentBitmap; //bitmap courrant
 	BView* offscreenView; //view pour dessiner offscreen
-	list<BBitmap*> file; //tous les bitmaps
+	std::list<BBitmap*> file; //tous les bitmaps
 	ITER runner;
 	int Speed;
 	int Loop;
